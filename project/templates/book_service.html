@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Book Service for {{ home.name }}</h2>
+<form method="POST">
+    <input type="text" name="client_name" placeholder="Your Name" required>
+    <input type="date" name="service_date" required>
+    <button type="submit">Book Service</button>
+</form>
+{% endblock %}
